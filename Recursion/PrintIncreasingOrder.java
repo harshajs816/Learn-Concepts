@@ -16,9 +16,21 @@ public class PrintIncreasingOrder {
         PrintInc(n+1);
     }
 
+    // Another method 
+
+    public static void PrintIncreasing(int n){
+         if (n==1){
+            System.out.println("1");
+            return;
+            }
+
+            PrintIncreasing(n-1);
+            System.out.print(n + " ");
+    }
+
     public static void main(String[] args) {
-        int n = 1;
-        PrintInc(n);
+        int n = 10;
+        PrintIncreasing(n);
 
     }
 }
